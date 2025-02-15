@@ -1,0 +1,10 @@
+@import "tailwindcss";
+html, body {
+    background-color: #f3f4f6; /* Same as Tailwind's bg-gray-100 */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
