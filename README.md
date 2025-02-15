@@ -1,1 +1,1 @@
-# Finsight
+# TechTitans
