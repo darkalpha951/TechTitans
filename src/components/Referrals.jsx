@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MarketingSchemes = () => {
+const Referrals = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const MarketingSchemes = () => {
   )
 }
 
-export default MarketingSchemes
+export default Referrals
