@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 export default function Sidebar() {
     const [transactionsOpen, setTransactionsOpen] = useState(false);
     return (
-        <div className="w-64 bg-green-600 text-white h-screen p-6">
+        <div className={`w-64 bg-green-600 text-white h-screen p-6 transform transition-all duration-300`}>
             <h2 className="text-xl font-bold mb-6 text-center"><Link to='./'>FINSIGHT</Link></h2>
             <ul className="space-y-4">
                 <li className="flex items-center gap-2"><FaHome size={20} /><Link to="/dashboard" className="block hover:text-gray-300">Dashboard</Link></li>

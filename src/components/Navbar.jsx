@@ -3,7 +3,7 @@ import { FaBars, FaCube, FaCog, FaChartLine } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({toggleSidebar}) {
 
     const [search, setSearch] = useState("")
     const input = useRef()
@@ -20,7 +20,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between bg-white shadow-md px-6 py-3 z-50">
             {/* Left Side */}
             <div className="flex items-center space-x-4">
-                <FaBars className="text-gray-600 text-lg cursor-pointer" />
+                <FaBars className="text-gray-600 text-lg cursor-pointer" onClick={toggleSidebar} />
                 <FaCube className="text-gray-600 text-lg cursor-pointer" />
                 <div className="relative">
                     <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-500 cursor-pointer" onClick={handleClick}/>
