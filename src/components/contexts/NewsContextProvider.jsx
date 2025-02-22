@@ -16,9 +16,11 @@ const NewsContextProvider = ({children}) => {
     };
 
 
-    return <NewsContext.Provider value={{news, setNews, fetchNews}}>
-        {children}
-    </NewsContext.Provider>
+    return (
+        <NewsContext.Provider value={{news, setNews, fetchNews}}>
+            {children}
+        </NewsContext.Provider>
+    )
 }
 
 export default NewsContextProvider
